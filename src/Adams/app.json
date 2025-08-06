@@ -1,0 +1,33 @@
+{
+  "id": "07c5804e-7152-4bc5-aa87-1dc03f276b89",
+  "name": "Adams",
+  "publisher": "Implementation Specialists",
+  "version": "26.2.0.0",
+  "brief": "Customizations for Adams.",
+  "description": "Business Central customizations for Adams.",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "https://www.iscorp.biz/support/",
+  "url": "https://www.iscorp.biz/",
+  "logo": "../Resources/ISLogo.png",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "26.2.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "runtime": "15.2",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ]
+}
