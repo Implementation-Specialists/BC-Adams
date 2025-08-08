@@ -13,6 +13,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">ReportExtension ISZ Standard Sales - Order Con - ReportLabel ISZ_NetWeightLbl</note>
         </trans-unit>
+        <trans-unit id="ReportExtension 482265182 - ReportLabel 479272740" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Report 2043161662">
+          <source>Pick Ticket</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">ReportExtension ISZ Standard Sales - Order Con - ReportLabel ISZ_PickTicketLbl</note>
+        </trans-unit>
         <trans-unit id="ReportExtension 482265182 - ReportLabel 2642446092" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Report 2043161662">
           <source>Total Net Weight</source>
           <note from="Developer" annotates="general" priority="2"></note>
