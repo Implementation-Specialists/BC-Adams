@@ -25,7 +25,7 @@ reportextension 50100 "ISZ Standard Sales - Order Con" extends "Standard Sales -
         {
             trigger OnAfterAfterGetRecord()
             begin
-                TotalNetWeight += "Net Weight";
+                TotalNetWeight += "Quantity (Base)" * "Net Weight";
             end;
         }
         modify(ReportTotalsLine)
