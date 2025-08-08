@@ -28,20 +28,20 @@ reportextension 50100 "ISZ Standard Sales - Order Con" extends "Standard Sales -
                 TotalNetWeight += "Quantity (Base)" * "Net Weight";
             end;
         }
-        modify(ReportTotalsLine)
-        {
-            trigger OnAfterPreDataItem()
-            begin
-                AddTotalNetWeightReportTotalsLine(ReportTotalsLine);
-            end;
-        }
-        modify(USReportTotalsLine)
-        {
-            trigger OnAfterPreDataItem()
-            begin
-                AddTotalNetWeightReportTotalsLine(ReportTotalsLine);
-            end;
-        }
+        // modify(ReportTotalsLine)
+        // {
+        //     trigger OnAfterPreDataItem()
+        //     begin
+        //         AddTotalNetWeightReportTotalsLine(ReportTotalsLine);
+        //     end;
+        // }
+        // modify(USReportTotalsLine)
+        // {
+        //     trigger OnAfterPreDataItem()
+        //     begin
+        //         AddTotalNetWeightReportTotalsLine(ReportTotalsLine);
+        //     end;
+        // }
     }
     rendering
     {
@@ -57,12 +57,13 @@ reportextension 50100 "ISZ Standard Sales - Order Con" extends "Standard Sales -
     {
         ISZ_NetWeightLbl = 'Net Weight';
         ISZ_TotalNetWeightLbl = 'Total Net Weight';
+        ISZ_PickTicketLbl = 'Pick Ticket';
     }
 
-    local procedure AddTotalNetWeightReportTotalsLine(var ReportTotalsLine: Record "Report Totals Buffer")
-    begin
-        ReportTotalsLine.Add(TotalNetWeightLbl, TotalNetWeight, false, false, false);
-    end;
+    // local procedure AddTotalNetWeightReportTotalsLine(var ReportTotalsLine: Record "Report Totals Buffer")
+    // begin
+    //     ReportTotalsLine.Add(TotalNetWeightLbl, TotalNetWeight, false, false, false);
+    // end;
 
     var
         TotalNetWeight: Decimal;
